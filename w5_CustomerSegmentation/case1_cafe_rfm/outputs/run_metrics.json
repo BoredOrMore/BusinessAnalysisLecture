@@ -1,0 +1,28 @@
+{
+  "random_seed": 42,
+  "customers": 150,
+  "transactions": 4162,
+  "reference_date": "2026-01-01",
+  "rfm_definitions": {
+    "recency": "days from reference date to latest visit date",
+    "frequency": "distinct transaction IDs",
+    "monetary": "sum of transaction total_spend"
+  },
+  "candidate_k": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "selected_k": 4,
+  "selected_silhouette": 0.6566171919830849,
+  "selected_stability_ari": 1.0,
+  "selected_minimum_cluster_size": 36,
+  "withheld_label_ari": 1.0,
+  "best_match_accuracy": 1.0,
+  "business_label_accuracy": 1.0,
+  "total_revenue": 63233.0
+}

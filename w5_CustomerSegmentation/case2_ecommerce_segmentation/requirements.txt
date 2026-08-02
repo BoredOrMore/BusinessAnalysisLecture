@@ -1,0 +1,9 @@
+duckdb==1.5.5
+kaggle==1.8.4
+matplotlib>=3.10,<4
+numpy>=2.4,<3
+polars==1.43.2
+psutil>=7,<8
+pyarrow>=21,<22
+scikit-learn>=1.8,<2
+seaborn>=0.13,<1

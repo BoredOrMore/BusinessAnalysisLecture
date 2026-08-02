@@ -1,0 +1,27 @@
+{
+  "dataset_url": "https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store",
+  "archive_path": "/Users/suchao_s/BusinessAnalysisSubject/BusinessAnalysisLecture/w5_CustomerSegmentation/case2_ecommerce_segmentation/data/raw/2019-Oct.csv.zip",
+  "archive_bytes": 1732595746,
+  "archive_sha256": "cb9a926bfe9317ed07044aa185f44771795e0d00489907bdd036ca434cacc4a8",
+  "member_name": "2019-Oct.csv",
+  "member_uncompressed_bytes": 5668612855,
+  "member_sha256": "fedd938409b5f836ec89b39c861b13dad99fc7cd9beb1fddd97a2d50488b5b80",
+  "gzip_path": "/Users/suchao_s/BusinessAnalysisSubject/BusinessAnalysisLecture/w5_CustomerSegmentation/case2_ecommerce_segmentation/data/raw/2019-Oct.csv.gz",
+  "gzip_bytes": 2002445344,
+  "gzip_sha256": "49114d7a96715727f5bb00fc3c3e57892e971ca5fca90c1be9ba22a36116c817",
+  "elapsed_seconds": 38.921,
+  "resource_metrics": {
+    "peak_rss_gb": 0.172,
+    "minimum_free_disk_gb": 129.902,
+    "peak_temp_gb": 0.0
+  },
+  "machine_preflight": {
+    "physical_ram_gb": 24.0,
+    "available_ram_gb": 4.11,
+    "free_disk_gb": 129.78,
+    "logical_cpus": 12,
+    "duckdb_memory_limit": "10GB",
+    "duckdb_threads": 4,
+    "duckdb_temp_limit": "35GB"
+  }
+}

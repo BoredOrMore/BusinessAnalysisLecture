@@ -1,0 +1,33 @@
+{
+  "customers": 347118,
+  "unique_customers": 347118,
+  "feature_revenue": 229957502.26999652,
+  "reference_date_min": "2019-11-01 00:00:00",
+  "reference_date_max": "2019-11-01 00:00:00",
+  "feature_null_cells": 0,
+  "negative_feature_cells": 0,
+  "rates_above_one": 0,
+  "invalid_session_counts": 0,
+  "copy_rows": 347118,
+  "event_purchase_revenue": 229957502.27001944,
+  "inputs": [
+    "/Users/suchao_s/BusinessAnalysisSubject/BusinessAnalysisLecture/w5_CustomerSegmentation/case2_ecommerce_segmentation/data/processed/2019-Oct.parquet"
+  ],
+  "output": "/Users/suchao_s/BusinessAnalysisSubject/BusinessAnalysisLecture/w5_CustomerSegmentation/case2_ecommerce_segmentation/data/derived/2019-Oct_customer_features.parquet",
+  "output_bytes": 8188881,
+  "resource_metrics": {
+    "elapsed_seconds": 6.018,
+    "peak_rss_gb": 6.631,
+    "minimum_free_disk_gb": 124.847,
+    "peak_temp_gb": 0.132
+  },
+  "machine_preflight": {
+    "physical_ram_gb": 24.0,
+    "available_ram_gb": 6.0,
+    "free_disk_gb": 124.97,
+    "logical_cpus": 12,
+    "duckdb_memory_limit": "10GB",
+    "duckdb_threads": 4,
+    "duckdb_temp_limit": "35GB"
+  }
+}

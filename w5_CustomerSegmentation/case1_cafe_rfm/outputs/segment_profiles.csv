@@ -1,0 +1,5 @@
+segment,customers,recency_days_mean,frequency_mean,monetary_mean,average_transaction_value_mean,total_revenue
+VIP Daily Drinkers,38,6.71,58.92,1258.64,21.38,47828.5
+Occasional Treaters,36,68.36,10.97,204.79,18.71,7372.5
+Budget Students,40,10.6,32.1,158.62,4.95,6345.0
+Churned Customers,36,253.67,6.78,46.86,6.93,1687.0

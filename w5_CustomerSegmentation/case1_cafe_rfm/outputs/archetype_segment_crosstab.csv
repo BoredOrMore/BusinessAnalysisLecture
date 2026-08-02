@@ -1,0 +1,6 @@
+archetype,Budget Students,Churned Customers,Occasional Treaters,VIP Daily Drinkers,Total
+Budget Students,40,0,0,0,40
+Churned Customers,0,36,0,0,36
+Occasional Treaters,0,0,36,0,36
+VIP Daily Drinkers,0,0,0,38,38
+Total,40,36,36,38,150

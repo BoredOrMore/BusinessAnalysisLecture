@@ -1,0 +1,18 @@
+# Large or reproducible local data
+**/data/raw/
+**/data/processed/
+**/data/derived/
+
+# Local execution state
+.tmp/
+*.duckdb
+*.duckdb.wal
+
+# Local credentials and downloaded archives
+.env
+*.csv.gz
+*.zip
+.DS_Store
+
+# Case Study 2 smoke evidence is reproducible and must not enter the real report
+case2_ecommerce_segmentation/outputs/smoke*

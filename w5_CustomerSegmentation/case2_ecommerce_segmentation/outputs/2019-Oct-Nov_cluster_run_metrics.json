@@ -1,0 +1,40 @@
+{
+  "input": "/Users/suchao_s/BusinessAnalysisSubject/BusinessAnalysisLecture/w5_CustomerSegmentation/case2_ecommerce_segmentation/data/derived/2019-Oct-Nov_customer_features.parquet",
+  "clustered_output": "/Users/suchao_s/BusinessAnalysisSubject/BusinessAnalysisLecture/w5_CustomerSegmentation/case2_ecommerce_segmentation/data/derived/2019-Oct-Nov_clustered_customers.parquet",
+  "customers": 697470,
+  "sample_rows": 100000,
+  "silhouette_rows": 25000,
+  "selected_k": 3,
+  "selected_silhouette": 0.22656015693492104,
+  "selected_stability_ari": 0.9968921126100767,
+  "selected_minimum_cluster_size_in_sample": 17642,
+  "random_seed": 42,
+  "features": [
+    "recency_days",
+    "purchase_sessions",
+    "revenue",
+    "average_order_value",
+    "views",
+    "cart_events",
+    "purchase_items",
+    "active_days",
+    "session_count",
+    "category_diversity",
+    "cart_to_purchase_rate"
+  ],
+  "elapsed_seconds": 21.943,
+  "resource_metrics": {
+    "peak_rss_gb": 1.454,
+    "minimum_free_disk_gb": 120.222,
+    "peak_temp_gb": 0.0
+  },
+  "machine_preflight": {
+    "physical_ram_gb": 24.0,
+    "available_ram_gb": 10.28,
+    "free_disk_gb": 120.2,
+    "logical_cpus": 12,
+    "duckdb_memory_limit": "10GB",
+    "duckdb_threads": 4,
+    "duckdb_temp_limit": "35GB"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "expected_month": "2019-11",
+  "input_rows_from_copy": 67501979,
+  "output_rows": 67501979,
+  "min_event_time": "2019-11-01 00:00:00",
+  "max_event_time": "2019-11-30 23:59:59",
+  "invalid_event_times": 0,
+  "null_product_ids": 0,
+  "null_category_ids": 0,
+  "null_category_codes": 21898171,
+  "null_brands": 9218235,
+  "null_prices": 0,
+  "negative_prices": 0,
+  "null_user_ids": 0,
+  "null_user_sessions": 10,
+  "purchase_events_without_session": 0,
+  "rows_outside_expected_month": 0,
+  "exact_duplicate_rows": 100519,
+  "event_type_counts": {
+    "cart": 3028930,
+    "purchase": 916939,
+    "view": 63556110
+  },
+  "schema": [
+    {
+      "column": "event_time",
+      "type": "TIMESTAMP",
+      "nullable": "YES"
+    },
+    {
+      "column": "event_type",
+      "type": "VARCHAR",
+      "nullable": "YES"
+    },
+    {
+      "column": "product_id",
+      "type": "BIGINT",
+      "nullable": "YES"
+    },
+    {
+      "column": "category_id",
+      "type": "BIGINT",
+      "nullable": "YES"
+    },
+    {
+      "column": "category_code",
+      "type": "VARCHAR",
+      "nullable": "YES"
+    },
+    {
+      "column": "brand",
+      "type": "VARCHAR",
+      "nullable": "YES"
+    },
+    {
+      "column": "price",
+      "type": "DOUBLE",
+      "nullable": "YES"
+    },
+    {
+      "column": "user_id",
+      "type": "BIGINT",
+      "nullable": "YES"
+    },
+    {
+      "column": "user_session",
+      "type": "VARCHAR",
+      "nullable": "YES"
+    }
+  ],
+  "source_path": "/Users/suchao_s/BusinessAnalysisSubject/BusinessAnalysisLecture/w5_CustomerSegmentation/case2_ecommerce_segmentation/data/raw/2019-Nov.csv.gz",
+  "source_bytes": 3285419603,
+  "source_sha256": "78148e964c2ddc7fb41c14abb3eded067436f22ca1ae6ea05c941301c32f0ba9",
+  "output_path": "/Users/suchao_s/BusinessAnalysisSubject/BusinessAnalysisLecture/w5_CustomerSegmentation/case2_ecommerce_segmentation/data/processed/2019-Nov.parquet",
+  "output_bytes": 1382246697,
+  "resource_metrics": {
+    "elapsed_seconds": 35.812,
+    "peak_rss_gb": 5.968,
+    "minimum_free_disk_gb": 119.424,
+    "peak_temp_gb": 1.822
+  },
+  "machine_preflight": {
+    "physical_ram_gb": 24.0,
+    "available_ram_gb": 4.46,
+    "free_disk_gb": 121.25,
+    "logical_cpus": 12,
+    "duckdb_memory_limit": "10GB",
+    "duckdb_threads": 4,
+    "duckdb_temp_limit": "35GB"
+  }
+}

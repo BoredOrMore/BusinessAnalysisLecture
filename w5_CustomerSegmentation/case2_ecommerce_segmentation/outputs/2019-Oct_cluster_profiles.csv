@@ -1,0 +1,4 @@
+cluster,segment,customers,total_revenue,recency_days_mean,purchase_sessions_mean,revenue_mean,average_order_value_mean,views_mean,cart_events_mean,purchase_items_mean,active_days_mean,session_count_mean,category_diversity_mean,cart_to_purchase_rate_mean
+0,One-Time Direct Buyers,125934,32092986.33,16.437,1.1317,254.8397,229.207,17.9872,0.1328,1.2132,2.5765,3.9333,1.502,0.0136
+1,High-Value Efficient Buyers,128946,76467482.87,14.4654,1.4089,593.0194,407.8435,14.4051,2.4361,1.6383,2.3608,3.5049,1.5761,0.8867
+2,Engaged Repeat Shoppers,92238,121397033.07,12.2784,3.3106,1316.1282,311.4553,93.4842,3.8387,4.1069,8.3001,16.5564,5.1405,0.4429
