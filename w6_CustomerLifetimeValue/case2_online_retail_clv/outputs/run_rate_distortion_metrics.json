@@ -1,0 +1,26 @@
+{
+  "actual_annual_gmv": 8911407.904,
+  "peak_month": {
+    "month": "2011-11",
+    "monthly_gmv": 1161817.38,
+    "annualized_run_rate": 13941808.559999999,
+    "overestimation_vs_actual_pct": 56.44900009281406
+  },
+  "trough_month": {
+    "month": "2011-02",
+    "monthly_gmv": 447137.35,
+    "annualized_run_rate": 5365648.199999999,
+    "underestimation_vs_actual_pct": -39.788995658120875
+  },
+  "anomaly_diagnostics": {
+    "top_1_invoice_spend": 168469.6,
+    "top_1_invoice_annualized_distortion": 2021635.2000000002,
+    "top_10_invoices_spend": 447102.35,
+    "top_10_invoices_share_pct": 5.0171909401578665,
+    "one_time_whale_accounts_count": 2,
+    "one_time_whale_total_spend": 83391.27
+  },
+  "total_naive_extrapolated_margin": 3347160.027251653,
+  "total_probabilistic_12m_clv": 2582482.643818685,
+  "overall_churn_phantom_gap": 764677.383432968
+}

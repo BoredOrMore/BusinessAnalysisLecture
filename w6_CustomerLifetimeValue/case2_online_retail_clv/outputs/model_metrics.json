@@ -1,0 +1,28 @@
+{
+  "dataset_mode": "full_production",
+  "total_unique_customers": 4338,
+  "total_historical_spend": 8911407.904,
+  "total_predicted_12m_net_clv": 2582482.643818685,
+  "mean_customer_12m_clv": 595.3164231947176,
+  "median_customer_12m_clv": 296.0471945999969,
+  "overall_mean_p_alive": 0.9993280471463525,
+  "at_risk_high_ltv_count": 0,
+  "at_risk_high_ltv_clv": 0.0,
+  "fitted_bgnbd": {
+    "r": 0.8265365280530826,
+    "alpha": 68.95925384203214,
+    "a": 0.017370277226598528,
+    "b": 65.78957487678015
+  },
+  "fitted_gamma_gamma": {
+    "p": 3.6239350290884507,
+    "q": 3.327156884007894,
+    "v": 272.45625712370264
+  },
+  "assumptions": {
+    "gross_margin_pct": 0.3,
+    "annual_discount_rate": 0.1,
+    "monthly_discount_rate": 0.0083,
+    "horizon_days": 365
+  }
+}

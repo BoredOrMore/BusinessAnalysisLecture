@@ -1,0 +1,8 @@
+Feature,Importance
+total_spend_cal,0.6991688092140673
+monetary_value_cal,0.18608291168895616
+frequency_cal,0.04117682909040528
+T_cal,0.02470398134971797
+avg_items_per_order,0.019183245759422794
+recency_cal,0.01547290572985169
+inactivity_days_cal,0.014211317167578955

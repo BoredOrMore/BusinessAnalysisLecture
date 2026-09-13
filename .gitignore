@@ -219,3 +219,11 @@ __marimo__/
 
 # Week 5 materials are maintained on the Week 5 feature branch.
 /w5_CustomerSegmentation/
+w6_CustomerLifetimeValue/case2_online_retail_clv/data/
+w6_CustomerLifetimeValue/case1_cafe_clv/data/
+w6_CustomerLifetimeValue/case2_online_retail_clv/outputs/clean_transactions.csv
+
+# Local dependencies and generated caches
+node_modules/
+.codegraph/
+.DS_Store

@@ -1,0 +1,25 @@
+{
+  "raw_records": 541909,
+  "clean_records": 397884,
+  "clean_record_retention_pct": 73.42265952401603,
+  "anonymous_checkout_records": 135080,
+  "cancellations_returns_records": 10624,
+  "unique_verified_customers": 4338,
+  "unique_invoices": 18532,
+  "unique_products": 3665,
+  "gross_merchandise_value": 8911407.904,
+  "mean_customer_lifetime_spend": 2054.2664601198708,
+  "median_customer_lifetime_spend": 674.485,
+  "mean_order_value": 480.8659563997409,
+  "repeat_buyer_count": 2790,
+  "repeat_buyer_pct": 64.31535269709543,
+  "one_time_buyer_count": 1548,
+  "one_time_buyer_pct": 35.684647302904565,
+  "pareto_metrics": {
+    "top_1pct_revenue_share": 31.775384546464135,
+    "top_5pct_revenue_share": 50.31225344299985,
+    "top_10pct_revenue_share": 61.334117110121646,
+    "top_20pct_revenue_share": 74.59402692156233
+  },
+  "uk_revenue_share_pct": 82.01163758556642
+}

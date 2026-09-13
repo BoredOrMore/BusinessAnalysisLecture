@@ -1,0 +1,12 @@
+{
+  "raw_row_count": 541909,
+  "rule_01_null_customer_dropped": 135080,
+  "rule_02_negative_qty_dropped": 8905,
+  "rule_03_zero_price_dropped": 40,
+  "clean_row_count": 397884,
+  "data_retention_pct": 73.42265952401603,
+  "unique_customers": 4338,
+  "date_min": "2010-12-01 08:26:00",
+  "date_max": "2011-12-09 12:50:00",
+  "total_revenue": 8911407.904
+}

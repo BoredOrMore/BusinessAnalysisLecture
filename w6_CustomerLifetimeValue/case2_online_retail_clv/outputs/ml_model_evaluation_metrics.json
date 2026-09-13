@@ -1,0 +1,43 @@
+{
+  "calibration_window": {
+    "start": "2010-12-01",
+    "end": "2011-09-01",
+    "customer_count": 3317,
+    "feature_columns_X": [
+      "frequency_cal",
+      "recency_cal",
+      "T_cal",
+      "inactivity_days_cal",
+      "monetary_value_cal",
+      "total_spend_cal",
+      "avg_items_per_order"
+    ]
+  },
+  "holdout_window": {
+    "start": "2011-09-01",
+    "end": "2011-12-09",
+    "duration_days": 99,
+    "target_variable_Y": "target_future_spend_holdout ($ Total Spend in Holdout)",
+    "total_holdout_spend_actual": 3032564.791
+  },
+  "models_benchmark": {
+    "Supervised_GBDT": {
+      "MAE": 439.7042002044991,
+      "RMSE": 789.0225521274439,
+      "R2": 0.9768604587396466,
+      "Top_10pct_Capture_Pct": 61.66947085682233
+    },
+    "Probabilistic_BGNBD_GammaGamma": {
+      "MAE": 780.9012306335984,
+      "RMSE": 4821.654707536801,
+      "R2": 0.1358918049587865,
+      "Top_10pct_Capture_Pct": 49.63720460210276
+    },
+    "Naive_Static_RunRate": {
+      "MAE": 762.3152738556784,
+      "RMSE": 4181.060698409827,
+      "R2": 0.3502461572741242,
+      "Top_10pct_Capture_Pct": 49.62207681319742
+    }
+  }
+}

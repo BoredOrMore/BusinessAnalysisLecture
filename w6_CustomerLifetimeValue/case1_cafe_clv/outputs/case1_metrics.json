@@ -1,0 +1,14 @@
+{
+  "total_customers": 10,
+  "total_historical_margin": 9218.4,
+  "total_predicted_12m_clv": 7703.933943250058,
+  "top3_predicted_clv_share_pct": 75.42022022725737,
+  "mean_p_alive": 0.7666445934965018,
+  "dormant_customers_count": 3,
+  "fitted_parameters": {
+    "r": 0.55,
+    "alpha": 10.8,
+    "a": 0.78,
+    "b": 2.45
+  }
+}
