@@ -219,3 +219,17 @@ __marimo__/
 
 # Week 5 materials are maintained on the Week 5 feature branch.
 /w5_CustomerSegmentation/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Tool caches and packages
+.codegraph/
+node_modules/
+.tmp/
+**/.tmp/
+
+# Data directories
+data/
+**/data/
