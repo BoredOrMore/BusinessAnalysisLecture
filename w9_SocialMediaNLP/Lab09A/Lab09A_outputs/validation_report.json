@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "course": "961731 Business Data Analytics",
+    "assignment": "Lab 09A \u2014 Social Media Sentiment Analysis & Operational Triage",
+    "execution_timestamp_utc": "2026-09-27T03:42:49.467172+00:00",
+    "random_seed": 961731,
+    "system_python": "3.14.2"
+  },
+  "data_integrity": {
+    "total_source_rows": 14640,
+    "conserved_rows_assertion": true,
+    "conflicting_tweet_ids_count": 18,
+    "quarantined_rows_count": 36,
+    "connected_components_count": 7551,
+    "train_representatives": 6040,
+    "test_representatives": 1511,
+    "author_overlap_count": 0,
+    "text_overlap_count": 0
+  },
+  "model_selection": {
+    "cv_strategy": "3-fold StratifiedKFold on Training Set",
+    "candidate_C": [
+      0.3,
+      1.0,
+      3.0
+    ],
+    "cv_scores": {
+      "0.3": {
+        "fold_scores": [
+          0.5724627445673441,
+          0.5690246471709725,
+          0.5993494884188849
+        ],
+        "mean_macro_f1": 0.5802789600524005
+      },
+      "1.0": {
+        "fold_scores": [
+          0.6920273140988068,
+          0.6777279799101281,
+          0.6991456736214966
+        ],
+        "mean_macro_f1": 0.6896336558768105
+      },
+      "3.0": {
+        "fold_scores": [
+          0.7210382768497725,
+          0.7039360581504442,
+          0.7327551110743799
+        ],
+        "mean_macro_f1": 0.7192431486915322
+      }
+    },
+    "selected_best_C": 3.0,
+    "unigram_comparison_f1": 0.7119923560014542,
+    "unigram_bigram_selected_f1": 0.7192431486915322
+  },
+  "evaluation_metrics": {
+    "dummy_baseline_accuracy": 0.6121773659827928,
+    "dummy_baseline_macro_f1": 0.2531472359058566,
+    "test_accuracy": 0.7743216412971542,
+    "test_macro_f1": 0.701902687884104,
+    "test_multiclass_log_loss": 0.53837390725168,
+    "local_contrast_verified": true
+  },
+  "aspect_triage": {
+    "aspects_analyzed": [
+      "delay",
+      "baggage",
+      "staff",
+      "refund",
+      "no_match"
+    ],
+    "aspect_counts": {
+      "delay": 2612,
+      "baggage": 1132,
+      "staff": 1196,
+      "refund": 569,
+      "no_match": 9828
+    }
+  }
+}

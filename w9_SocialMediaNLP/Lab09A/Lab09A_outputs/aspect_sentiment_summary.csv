@@ -1,0 +1,6 @@
+aspect,denominator_n_a,negative_count,neutral_count,positive_count,negative_pct,neutral_pct,positive_pct
+delay,2612,2346,166,100,89.82,6.36,3.83
+baggage,1132,978,90,64,86.4,7.95,5.65
+staff,1196,887,65,244,74.16,5.43,20.4
+refund,569,435,97,37,76.45,17.05,6.5
+no_match,9828,5161,2706,1961,52.51,27.53,19.95
