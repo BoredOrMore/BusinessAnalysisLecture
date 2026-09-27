@@ -32,3 +32,8 @@ No formal coverage target exists. Run the complete workflow and confirm every re
 ## Commit & Pull Request Guidelines
 
 Name weekly branches `WeekXX-Descriptive-Topic-Name`; keep unfinished work off `main`. Use short, imperative commit subjects, preferably specific: `Add Week 05 clustering analysis and report`. Pull requests should explain the business question, list deliverables, document data sources and assumptions, and report validation commands. Link issues and include screenshots for chart or slide changes. Exclude caches and datasets over 50 MB.
+
+## Communication Language
+
+Communicate with the user in Thai (ภาษาไทย). Maintain concise, technically rigorous style. Keep technical, mathematical, and code terminology exact in English (e.g. TF-IDF, logit, confusion matrix, macro-F1, L2 norm).
+

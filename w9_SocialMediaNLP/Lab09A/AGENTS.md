@@ -202,3 +202,10 @@ git status --short
 ls -lh Lab09A_outputs/
 ls -lh figures/
 ```
+
+---
+
+## 11. Communication Language
+
+Communicate with the user in Thai (ภาษาไทย). Maintain concise, technically rigorous style (caveman). Keep technical terms, mathematical notation, and code identifiers exact in English (e.g., TF-IDF, logit, confusion matrix, macro-F1, sublinear TF, L2 norm).
+
