@@ -1,0 +1,213 @@
+{
+  "data_sha256": "c91b525a2a6755a1b0b80dad1d0d008ca97ec4df34552c8f47ffa12b6184b779",
+  "seed": 42,
+  "fn_cost": 5,
+  "fp_cost": 1,
+  "versions": {
+    "pandas": "2.3.3",
+    "numpy": "2.4.0",
+    "scikit-learn": "1.8.0",
+    "imbalanced-learn": "0.14.2",
+    "shap": "0.52.0",
+    "matplotlib": "3.10.8",
+    "joblib": "1.5.3"
+  },
+  "audit": {
+    "rows": 10127,
+    "columns": 23,
+    "unique_customer_ids": 10127,
+    "class_counts": {
+      "Existing Customer": 8500,
+      "Attrited Customer": 1627
+    },
+    "churn_share": 0.1606596227905599,
+    "always_stay_accuracy": 0.8393403772094401,
+    "always_stay_recall": 0.0,
+    "missing_cells": 0,
+    "missing_by_column": {},
+    "unknown_by_column": {
+      "Education_Level": 1519,
+      "Marital_Status": 749,
+      "Income_Category": 1112
+    },
+    "duplicate_profiles": 0,
+    "excluded_predictor_columns": [
+      "CLIENTNUM",
+      "Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1",
+      "Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2"
+    ]
+  },
+  "splits": {
+    "train": {
+      "n": 6076,
+      "churners": 977
+    },
+    "validation": {
+      "n": 2025,
+      "churners": 325
+    },
+    "test": {
+      "n": 2026,
+      "churners": 325
+    }
+  },
+  "candidates": [
+    {
+      "model": "weighted_full",
+      "cv_ap": 0.9384676623954303,
+      "cv_std": 0.0073353553292616735,
+      "parameters": {
+        "model__max_depth": null,
+        "model__max_features": 0.6,
+        "model__min_samples_leaf": 2
+      },
+      "validation": {
+        "n": 2025,
+        "prevalence": 0.16049382716049382,
+        "average_precision": 0.9467757963183571,
+        "roc_auc": 0.9877411764705882,
+        "brier": 0.031767177005527225,
+        "precision": 0.8283378746594006,
+        "recall": 0.9353846153846154,
+        "f1": 0.8786127167630057,
+        "accuracy": 0.9585185185185185,
+        "tn": 1637,
+        "fp": 63,
+        "fn": 21,
+        "tp": 304,
+        "cost": 168.0,
+        "flagged": 367,
+        "threshold": 0.34707998126291745
+      }
+    },
+    {
+      "model": "numeric_control",
+      "cv_ap": 0.9462099210856648,
+      "cv_std": 0.006463270950697713,
+      "parameters": {
+        "model__max_depth": null,
+        "model__max_features": "sqrt",
+        "model__min_samples_leaf": 2
+      },
+      "validation": {
+        "n": 2025,
+        "prevalence": 0.16049382716049382,
+        "average_precision": 0.9500759721128664,
+        "roc_auc": 0.9873402714932127,
+        "brier": 0.03200248815866518,
+        "precision": 0.7663316582914573,
+        "recall": 0.9384615384615385,
+        "f1": 0.8437067773167359,
+        "accuracy": 0.9441975308641976,
+        "tn": 1607,
+        "fp": 93,
+        "fn": 20,
+        "tp": 305,
+        "cost": 193.0,
+        "flagged": 398,
+        "threshold": 0.253015873015873
+      }
+    },
+    {
+      "model": "adasyn_numeric",
+      "cv_ap": 0.9407652647319931,
+      "cv_std": 0.006322036236643683,
+      "parameters": {
+        "model__max_depth": null,
+        "model__max_features": "sqrt",
+        "model__min_samples_leaf": 2
+      },
+      "validation": {
+        "n": 2025,
+        "prevalence": 0.16049382716049382,
+        "average_precision": 0.9498786593600101,
+        "roc_auc": 0.9889782805429864,
+        "brier": 0.03481823830616289,
+        "precision": 0.770935960591133,
+        "recall": 0.963076923076923,
+        "f1": 0.8563611491108071,
+        "accuracy": 0.9481481481481482,
+        "tn": 1607,
+        "fp": 93,
+        "fn": 12,
+        "tp": 313,
+        "cost": 153.0,
+        "flagged": 406,
+        "threshold": 0.36074603174603176
+      }
+    }
+  ],
+  "selected_model": "numeric_control",
+  "test": {
+    "weighted_full": {
+      "n": 2026,
+      "prevalence": 0.16041461006910168,
+      "average_precision": 0.9396358663860662,
+      "roc_auc": 0.9871405960294849,
+      "brier": 0.03273116671761856,
+      "precision": 0.8166666666666667,
+      "recall": 0.9046153846153846,
+      "f1": 0.8583941605839416,
+      "accuracy": 0.9521224086870681,
+      "tn": 1635,
+      "fp": 66,
+      "fn": 31,
+      "tp": 294,
+      "cost": 221.0,
+      "flagged": 360,
+      "threshold": 0.34707998126291745
+    },
+    "numeric_control": {
+      "n": 2026,
+      "prevalence": 0.16041461006910168,
+      "average_precision": 0.9463534306468687,
+      "roc_auc": 0.9859322570433682,
+      "brier": 0.033721363726059286,
+      "precision": 0.7676767676767676,
+      "recall": 0.9353846153846154,
+      "f1": 0.8432732316227461,
+      "accuracy": 0.9442250740375123,
+      "tn": 1609,
+      "fp": 92,
+      "fn": 21,
+      "tp": 304,
+      "cost": 197.0,
+      "flagged": 396,
+      "threshold": 0.253015873015873,
+      "ap_bootstrap_95_interval": [
+        0.9288727166755373,
+        0.9631967986464938
+      ]
+    },
+    "adasyn_numeric": {
+      "n": 2026,
+      "prevalence": 0.16041461006910168,
+      "average_precision": 0.9452761421762829,
+      "roc_auc": 0.9869669425224981,
+      "brier": 0.03604519931878967,
+      "precision": 0.7536945812807881,
+      "recall": 0.9415384615384615,
+      "f1": 0.8372093023255813,
+      "accuracy": 0.941263573543929,
+      "tn": 1601,
+      "fp": 100,
+      "fn": 19,
+      "tp": 306,
+      "cost": 195.0,
+      "flagged": 406,
+      "threshold": 0.36074603174603176
+    }
+  },
+  "shap": {
+    "sample_size": 251,
+    "reference_probability": 0.1607482993197279,
+    "top_feature": "Total_Trans_Ct",
+    "top_mean_absolute_shap": 0.092093955892886,
+    "local_customer_id": "719073483",
+    "local_probability": 1.0,
+    "max_additivity_error": 3.1086244689504383e-15
+  },
+  "always_stay_test_cost": 1625.0,
+  "always_flag_test_cost": 1701.0,
+  "illustrative_hazard": 0.035
+}
