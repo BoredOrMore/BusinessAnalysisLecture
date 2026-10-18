@@ -8,6 +8,18 @@ This repository contains weekly Business Data Analytics teaching materials. Keep
 
 Weekly content may exist only on feature branches. Before assuming a case or file is absent, inspect every local and remote branch with `git branch --all`; use `git ls-tree` or `git show <branch>:<path>` to review content without switching. Make changes on the user-requested branch only, and never switch branches when uncommitted work could be disturbed.
 
+## Change Discipline
+
+- Keep diffs minimal: touch only the files the change needs. No unrelated refactors, renames, or reformatting; they hide the real change from review. If you spot an unrelated problem (another week's script, a stale report number), report it instead of fixing it.
+- Match the neighbouring files of the same week: naming, idioms, comment density, and how work is split across `generate.py`, `analyze.py`, `config.py`, notebooks, and `*_REPORT.md`.
+- Write the simplest code that solves the current case. Keep a function next to its only caller; extract a shared module (for example, one week-level module used by several labs) on the third use, not before. Never create generic `helpers`/`utils` files.
+- Fail fast on internal invariants: `assert` row counts, keys, and value ranges, and never add fallbacks or defaults for states that should not happen. Validate at the boundaries: raw CSV ingestion, `argparse` inputs, and downloaded data. A fallback the case brief explicitly declares (for example, a cold-start rule) is a business rule, not a silent default: implement it as specified and print when it fires.
+- Every function gets a docstring saying what it does or returns, not how.
+- Every number that sets behaviour gets an `UPPER_CASE` name at the top of its module. When a case has a `config.py`, put the value there; expose business assumptions (margins, thresholds, conversion rates) through `argparse`.
+- Ask before adding a new dependency beyond the stack the weekly cases already use (pandas, numpy, scipy, matplotlib, seaborn, mlxtend).
+- Never bypass git hooks (`--no-verify`), and never weaken or delete an assertion or validation check to make a script run; fix the cause.
+- One logical change per commit. Push only when the user asks.
+
 ## Build, Test, and Development Commands
 
 There is no repository-wide build, dependency manifest, or test suite. Run analysis scripts with the Python environment required by that case:
