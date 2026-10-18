@@ -1,0 +1,4 @@
+pair,support,adj_cosine,shrunk_weight,selected
+D-A,4,0.188639,0.125759,True
+D-B,4,-0.543201,-0.362134,False
+D-C,4,0.22771,0.151807,True

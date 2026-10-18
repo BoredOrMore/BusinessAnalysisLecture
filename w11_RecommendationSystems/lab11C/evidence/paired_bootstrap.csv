@@ -1,0 +1,7 @@
+comparison,split,users,mean_diff,ci_low,ci_high
+hybrid - popularity,test,9,0.0,0.0,0.0
+factor - popularity,test,9,0.0,0.0,0.0
+content - popularity,test,9,0.0,0.0,0.0
+hybrid - popularity,valid,10,0.0,0.0,0.0
+factor - popularity,valid,10,-0.05,-0.15,0.0
+content - popularity,valid,10,0.0,0.0,0.0

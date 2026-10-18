@@ -1,0 +1,9 @@
+object,fitted_on,latest_event_used,before_boundary
+popularity counts,train,2024-05-20T18:42:23+00:00,True
+user/global means,train,2024-05-20T18:42:23+00:00,True
+ID mappings + catalog,train,2024-05-20T18:42:23+00:00,True
+content vocabulary + IDF,train,2024-05-20T18:42:23+00:00,True
+user profiles,train,2024-05-20T18:42:23+00:00,True
+CF neighbourhoods,train,2024-05-20T18:42:23+00:00,True
+"factors (d=4, lambda=1.0)",train,2024-05-20T18:42:23+00:00,True
+"hyperparameters (d, lambda, alpha)",valid,2024-06-12T15:54:30+00:00,True
