@@ -1,0 +1,140 @@
+{
+  "source_sha256": "f55471cadb4740a4e15187bea6b8a7b8143f7c9ac3c764269031348fcfbcc079",
+  "k": 5,
+  "min_overlap": 3,
+  "shrinkage": "n/(n+2)",
+  "user_neighbors": 2,
+  "tiny_traces": {
+    "user_cf_U0_D": 4.580127018922194,
+    "item_cf_U0_D": 4.453078771784701,
+    "constant_rating_fallback": 3.0
+  },
+  "warm_user": "2",
+  "warm_user_lists": {
+    "popularity": [
+      "524",
+      "546",
+      "556",
+      "557",
+      "588"
+    ],
+    "content": [
+      "538",
+      "598",
+      "553",
+      "503",
+      "533"
+    ],
+    "user_cf": [
+      "524",
+      "546",
+      "556",
+      "557",
+      "588"
+    ],
+    "item_cf": [
+      "524",
+      "546",
+      "556",
+      "557",
+      "588"
+    ]
+  },
+  "comparison": [
+    {
+      "split": "valid",
+      "method": "popularity",
+      "users": 10,
+      "cold_users": 6,
+      "precision@5": 0.04,
+      "recall@5": 0.2,
+      "ndcg@5": 0.0930676558073393,
+      "coverage": 0.08571428571428572,
+      "fallback_share": 1.0
+    },
+    {
+      "split": "valid",
+      "method": "content",
+      "users": 10,
+      "cold_users": 6,
+      "precision@5": 0.04,
+      "recall@5": 0.2,
+      "ndcg@5": 0.0930676558073393,
+      "coverage": 0.21428571428571427,
+      "fallback_share": 0.8
+    },
+    {
+      "split": "valid",
+      "method": "user_cf",
+      "users": 10,
+      "cold_users": 6,
+      "precision@5": 0.04,
+      "recall@5": 0.2,
+      "ndcg@5": 0.0930676558073393,
+      "coverage": 0.08571428571428572,
+      "fallback_share": 1.0
+    },
+    {
+      "split": "valid",
+      "method": "item_cf",
+      "users": 10,
+      "cold_users": 6,
+      "precision@5": 0.04,
+      "recall@5": 0.2,
+      "ndcg@5": 0.0930676558073393,
+      "coverage": 0.08571428571428572,
+      "fallback_share": 1.0
+    },
+    {
+      "split": "test",
+      "method": "popularity",
+      "users": 9,
+      "cold_users": 2,
+      "precision@5": 0.0,
+      "recall@5": 0.0,
+      "ndcg@5": 0.0,
+      "coverage": 0.07142857142857142,
+      "fallback_share": 1.0
+    },
+    {
+      "split": "test",
+      "method": "content",
+      "users": 9,
+      "cold_users": 2,
+      "precision@5": 0.0,
+      "recall@5": 0.0,
+      "ndcg@5": 0.0,
+      "coverage": 0.2714285714285714,
+      "fallback_share": 0.5555555555555556
+    },
+    {
+      "split": "test",
+      "method": "user_cf",
+      "users": 9,
+      "cold_users": 2,
+      "precision@5": 0.0,
+      "recall@5": 0.0,
+      "ndcg@5": 0.0,
+      "coverage": 0.07142857142857142,
+      "fallback_share": 1.0
+    },
+    {
+      "split": "test",
+      "method": "item_cf",
+      "users": 9,
+      "cold_users": 2,
+      "precision@5": 0.0,
+      "recall@5": 0.0,
+      "ndcg@5": 0.0,
+      "coverage": 0.07142857142857142,
+      "fallback_share": 1.0
+    }
+  ],
+  "stress_tests": {
+    "missing metadata (B)": "B vector all zero, score 0.0; D 0.6769 -> finite, B ranks by tie-break",
+    "zero text vector (A)": "A='coffee' with coffee in all 4 docs (IDF 0) -> norm 0, profile None -> popularity fallback",
+    "constant ratings (U0)": "Pearson undefined -> 3.0000 via user_mean(no positive neighbor)",
+    "no overlap (U9)": "user-CF 4.0000 via user_mean(no positive neighbor); item-CF 4.0000 via user_mean(no positive item neighbor)",
+    "interpretation": "each case is missing data support, not an arithmetic error: no NaN, no division by zero"
+  }
+}
