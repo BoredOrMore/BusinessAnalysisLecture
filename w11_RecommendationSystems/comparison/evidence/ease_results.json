@@ -1,0 +1,47 @@
+{
+  "lambda_record": [
+    {
+      "lambda": 1.0,
+      "val_ndcg@5": 0.0430676558073393,
+      "val_coverage": 0.2,
+      "val_users": 10
+    },
+    {
+      "lambda": 10.0,
+      "val_ndcg@5": 0.0430676558073393,
+      "val_coverage": 0.2,
+      "val_users": 10
+    },
+    {
+      "lambda": 100.0,
+      "val_ndcg@5": 0.0430676558073393,
+      "val_coverage": 0.2,
+      "val_users": 10
+    },
+    {
+      "lambda": 500.0,
+      "val_ndcg@5": 0.0430676558073393,
+      "val_coverage": 0.2,
+      "val_users": 10
+    }
+  ],
+  "selected_lambda": 500.0,
+  "test": [
+    {
+      "method": "popularity",
+      "users": 9,
+      "precision@5": 0.0,
+      "recall@5": 0.0,
+      "ndcg@5": 0.0,
+      "coverage": 0.07142857142857142
+    },
+    {
+      "method": "ease",
+      "users": 9,
+      "precision@5": 0.0,
+      "recall@5": 0.0,
+      "ndcg@5": 0.0,
+      "coverage": 0.2714285714285714
+    }
+  ]
+}
