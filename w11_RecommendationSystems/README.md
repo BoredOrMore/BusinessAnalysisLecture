@@ -15,4 +15,5 @@ Run from any directory:
 python3 -m pip install -r w11_RecommendationSystems/requirements.txt
 python3 w11_RecommendationSystems/lab11A/lab11A_foundations.py
 python3 w11_RecommendationSystems/lab11B/lab11B_content_cf.py
+python3 w11_RecommendationSystems/lab11C/lab11C_hybrid_validation.py
 ```
